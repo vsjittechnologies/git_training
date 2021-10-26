@@ -1,18 +1,10 @@
-pipeline
-{
-    agent any
-    stages
-    {
-        stage('ContinuousDownload')
-        {
-            steps
-            {
-                echo "thisis build"
-            }
-        }
-         
-     }
-    
-    
-    
+node{
+    stage('download'){
+        echo "this is download"
+        
+    }
+    stage('build'){
+        echo "this is build"
+        
+    }
 }
